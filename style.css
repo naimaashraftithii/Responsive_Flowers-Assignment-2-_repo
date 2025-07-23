@@ -1,0 +1,207 @@
+/* ✅ Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f9fbfd;
+    color: #333;
+}
+
+/* ✅ Main Container */
+.flower_market {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* ✅ Header */
+.header {
+    background-color: #f9fbfd;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.navbar a.active {
+    font-weight: 700;
+    border-bottom: 2px solid #ff7f50;
+}
+
+/* ✅ Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    gap: 20px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-text h1 span {
+    color: #e75e2b;
+}
+
+.hero-text p {
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 500px;
+    color: #555;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* our plant */
+
+.plants-section {
+    max-width: 1140px;
+    margin: 50px auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section-header h2 span {
+    color: #e75e2b;
+}
+
+.section-header p {
+    color: #555;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.plant-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.plant-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.plant-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+
+.plant-card p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.plant-card button {
+    background-color: #e75e2b;
+    color: #fff;
+    border: none;
+    padding: 8px 80px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.plant-card button:hover {
+    background-color: goldenrod;
+}
+
+/* <!--Flower and plant lover sections   --> */
+
+
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* 📱 Navbar: show only cart */
+    .navbar ul li:not(:last-child) {
+        display: none;
+    }
+
+    .navbar ul li:last-child {
+        margin-left: auto;
+    }
+
+    /* 📱 Hero section: image on top */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    /* our plant */
+      .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+   /* <!--Flower and plant lover sections   --> */
+
+}
