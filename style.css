@@ -157,6 +157,57 @@ body {
 }
 
 /* <!--Flower and plant lover sections   --> */
+.flower-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1140px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.flower-image-container {
+  position: relative;
+  flex: 1;
+}
+
+.flower-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: -20px; /* Places it slightly outside the image */
+  left:500px;
+  width: 120px;
+  height:120px;
+  object-fit: contain;
+  z-index: 5;
+}
+
+.flower-text {
+  flex: 1;
+}
+
+.flower-text h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.flower-text ul {
+  list-style: disc inside;
+  color: #555;
+  line-height: 1.6;
+}
+
+.flower-text li {
+  margin-bottom: 10px;
+}
 
 
 
@@ -203,5 +254,19 @@ body {
     }
 
    /* <!--Flower and plant lover sections   --> */
+   .flower-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .flower-text ul {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  /* .badge {
+    display: none;
+  } */
+
 
 }
