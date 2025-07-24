@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.color_orange{
+  color: #E95A08;
+}
 body {
     font-family: "Inter", sans-serif;
     background-color: #f9fbfd;
@@ -99,73 +101,80 @@ main{
 
 /* our plant */
 
-.plants-section {
-    max-width: 1140px;
-    margin: 50px auto;
-    padding: 0 15px;
-    text-align: center;
+ .plants-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 .section-header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
-
-.section-header h2 span {
-    color: #e75e2b;
-}
-
 .section-header p {
-    color: #555;
-    font-size: 1rem;
-    max-width: 700px;
-    margin: 0 auto 30px;
-}
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  color: #555;
+  font-size: 0.95rem;
+} 
 
+/* Plants grid */
 .plants-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
 .plant-card {
-    background-color: #fff;
-    border: 1px solid #eee;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.plant-card:hover {
+  transform: translateY(-5px);
 }
 
 .plant-card img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .plant-card h3 {
-    font-size: 1.2rem;
-    margin: 10px 0 5px;
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .plant-card p {
-    font-weight: bold;
-    margin-bottom: 10px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .plant-card button {
-    background-color: #e75e2b;
-    color: #fff;
-    border: none;
-    padding: 8px 80px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 0.9rem;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .plant-card button:hover {
-    background-color: goldenrod;
+  background-color:burlywood;
+  color:black;
+  padding: 11px 0;
+  width: 100%;
+  border-radius: 4px;
 }
-
 /* <!--Flower and plant lover sections   --> */
 .flower-section {
   display: flex;
@@ -203,10 +212,12 @@ main{
   flex: 1;
 }
 
+
 .flower-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 15px;
+  max-width:540px ;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
 .flower-text ul {
@@ -241,22 +252,22 @@ main{
   color: #555;
   font-size: 0.95rem;
   line-height: 1.6;
-   max-width: 700px;
-    margin: 0 auto 30px;
+  max-width: 700px;
+  margin: 0 auto 30px;
 }
 
 /* Deals Grid */
 .latest-deals-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 20px;
+  gap: 10px;
   margin-top: 30px;
 }
 
 .deal-left {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
+  gap: 10px;
 }
 
 .deal-card {
@@ -268,7 +279,7 @@ main{
 .deal-card img {
   width: 100%;
   height: 100%;
-  opacity:0.7;
+  /* opacity:0.7; */
   object-fit: cover;
   filter: brightness(70%); /* Dim image for better text contrast */
 }
@@ -321,7 +332,7 @@ main{
 
 /* Badge styling */
 .trusted-badge {
-   position: absolute;
+  position: absolute;
   top: -80px;
   left: 75%;
   object-fit: contain;
@@ -342,8 +353,8 @@ main{
 }
 
 .flower-lover-text h2 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 800;
   margin-bottom: 20px;
   color: #222;
 }
@@ -439,17 +450,19 @@ main{
 
 .footer-logo p {
   color: #6B7280;
-  font-size: 1.3rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 300;
   max-width: 300px;
 }
 
 .footer-links {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 
 .footer-links p {
+
+  font-size: 1.2rem;;
   font-weight: 300;
   color: #6B7280;
   margin: 6px 0;
@@ -484,32 +497,60 @@ main{
 
     /* 📱 Hero section: image on top */
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse; /* Image first, text after */
         text-align: center;
+        margin-top:  20px;
+        text-align: left;
     }
-
-    .hero-text {
-        text-align: center;
-    }
-
+  
     .hero-text h1 {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
+        margin-left:18px;
     }
 
     .hero-text p {
         max-width: 90%;
         margin: 10px auto;
     }
-
     .hero-image img {
-        max-width: 90%;
+        max-width: 100%;
         margin-bottom: 20px;
     }
 
     /* our plant */
-      .plants-grid {
+      /* .plants-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
+    } */
+  .plants-section{
+    text-align: center;
+  }
+  .section-header{
+    margin: 30px auto;
+    text-align: center;
+  }
+
+  .plants-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .plant-card {
+    padding: 12px;
+  }
+
+  .plant-card h3 {
+    font-size: 1rem;
+  }
+
+  .plant-card button {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
 
    /* <!--Flower and plant lover sections   --> */
    .flower-container {
@@ -526,29 +567,27 @@ main{
 .flower-lover-container {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
-
+}
   .trusted-badge {
    display: none;
   }
 
   .flower-lover-text ul {
-    padding-left: 0;
+    list-style:disc;
   }
-
-
-
-
-
-
-
-
-
-
+  .flower-lover-text h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  
+}
 
 
 /* <!-- Latest deals are here-->*/
+.latest-deals{
+  margin: 30px auto;
+  text-align: center;
+}
+
  .latest-deals-content {
     grid-template-columns: 1fr;
   }
@@ -571,6 +610,7 @@ main{
     padding: 6px 12px;
   }
 /* Colorful branch */
+
   .newsletter-content h2 {
     font-size: 1.5rem;
   }
@@ -595,9 +635,18 @@ main{
   }
 
   .footer-links {
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;  /* fixed typo here */
+    gap: 12px;
+    margin-top: -10px;
+    text-align: left;
+    font-size: 1.3rem;
   }
-
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
   .footer-social {
     justify-content: center;
   }
