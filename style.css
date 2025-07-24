@@ -33,13 +33,15 @@ body {
 }
 
 .container {
+    margin:25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo img {
-    height: 50px;
+    height: 100px;
+    width: 200px;
 }
 
 .navbar ul {
@@ -62,11 +64,11 @@ body {
 /* ✅ Hero Section */
 main{
    max-width: 1200px;
-    margin: 0 auto;
+   margin: 0 auto;
 }
 
 .hero {
-  
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -486,6 +488,9 @@ main{
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  .container{
+     margin:25px;
+  }
     /* 📱 Navbar: show only cart */
     .navbar ul li:not(:last-child) {
         display: none;
@@ -499,7 +504,8 @@ main{
     .hero {
         flex-direction: column-reverse; /* Image first, text after */
         text-align: center;
-        margin-top:  20px;
+        margin:25px;
+        /* margin-top:  20px; */
         text-align: left;
     }
   
