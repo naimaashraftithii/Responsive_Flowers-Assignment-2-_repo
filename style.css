@@ -536,11 +536,6 @@ main{
         max-width: 100%;
         margin-bottom: 20px;
     }
-
-    /* our plant */
-      /* .plants-grid {
-        grid-template-columns: repeat(2, 1fr);
-    } */
   .plants-section{
     text-align: center;
   }
