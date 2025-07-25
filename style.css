@@ -1,4 +1,4 @@
-/* ✅ Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     height: 100%;
 }
 
-/* ✅ Main Container */
+/* Main Container */
 .section {
     max-width: 1200px;
     margin: 0 auto;
@@ -487,10 +487,14 @@ main{
 
 
 /* Mobile Styles */
-@media (max-width: 768px) {
+@media  (max-width: 768px) {
   .container{
      margin:25px;
   }
+  .logo img {
+    height: 80px;
+    width: 100px;
+}
     /* 📱 Navbar: show only cart */
     .navbar ul li:not(:last-child) {
         display: none;
