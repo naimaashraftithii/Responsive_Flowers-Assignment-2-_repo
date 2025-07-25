@@ -202,13 +202,18 @@ main{
 
 .badge {
   position: absolute;
-  top: -20px; /* Places it slightly outside the image */
-  left:500px;
-  width: 120px;
-  height:120px;
+  top: -80px;
+  left: 75%;
   object-fit: contain;
-  z-index: 5;
+  z-index: 6;
+  border-radius: 50%;
+  transition: transform 0.4s ease, box-shadow 0.7s ease;
+    /* Shadow */
+  /* background-color: #fff;  Optional: helps shadow show more clearly */
+  border-radius: 12px;     /* Optional: soften corners if image is not circular */        /* Creates breathing space around the image */
+
 }
+
 
 .flower-text {
   flex: 1;
@@ -333,7 +338,7 @@ main{
 }
 
 /* Badge styling */
-.trusted-badge {
+/* .trusted-badge {
   position: absolute;
   top: -80px;
   left: 75%;
@@ -341,11 +346,16 @@ main{
   z-index: 6;
   border-radius: 50%;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-.trusted-badge:hover {
+    /* Shadow */
+  /* background-color: #fff;  /* Optional: helps shadow show more clearly */
+  /* border-radius: 12px;     Optional: soften corners if image is not circular */ 
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);  Realistic shadow */
+  /* padding: 10px;           Creates breathing space around the image */
+/* } */
+/* .trusted-badge:hover {
   transform: rotate(15deg);
-  box-shadow: 0 0 20px rgba(255, 153, 0, 0.6); /* glowing shadow */
-}
+  /* box-shadow: 0 0 20px rgba(255, 153, 0, 0.6); glowing shadow */
+/* } */ 
 
 .flower-lover-text {
   text-align: left;
@@ -578,10 +588,10 @@ main{
     flex-direction: column;
     align-items: center;
 }
-  .trusted-badge {
-   display: none;
-  }
-
+ 
+.badge{
+  display: none;
+}
   .flower-lover-text ul {
     list-style:disc;
   }
